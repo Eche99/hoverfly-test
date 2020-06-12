@@ -1,0 +1,49 @@
+-------------------------------------------------------------------------------
+Test set: com.hovertest.HoverflyAppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 135.167 s <<< FAILURE! - in com.hovertest.HoverflyAppTest
+getLeveranserTest  Time elapsed: 7.512 s  <<< ERROR!
+com.thoughtworks.xstream.converters.ConversionException: 
+Failed calling method
+---- Debugging information ----
+message             : Failed calling method
+cause-exception     : java.lang.RuntimeException
+cause-message       : null
+method              : java.security.CodeSource.readObject()
+class               : java.security.CodeSource
+required-type       : java.security.CodeSource
+converter-type      : com.thoughtworks.xstream.converters.reflection.SerializableConverter
+path                : /io.specto.hoverfly.junit.core.Hoverfly/startedProcess/future/callable/target/closer/streams/outputThread/group/parent/threads/java.lang.Thread/contextClassLoader/parent/defaultDomain/codesource/java.security.CodeSource
+line number         : 19351
+class[1]            : java.security.ProtectionDomain
+required-type[1]    : java.security.ProtectionDomain
+converter-type[1]   : com.thoughtworks.xstream.converters.reflection.ReflectionConverter
+class[2]            : sun.misc.Launcher$ExtClassLoader
+required-type[2]    : sun.misc.Launcher$ExtClassLoader
+class[3]            : sun.misc.Launcher$AppClassLoader
+required-type[3]    : sun.misc.Launcher$AppClassLoader
+class[4]            : java.lang.Thread
+required-type[4]    : java.lang.Thread
+class[5]            : [Ljava.lang.Thread;
+required-type[5]    : [Ljava.lang.Thread;
+converter-type[2]   : com.thoughtworks.xstream.converters.collections.ArrayConverter
+class[6]            : java.lang.ThreadGroup
+required-type[6]    : java.lang.ThreadGroup
+class[7]            : org.zeroturnaround.exec.stream.PumpStreamHandler
+required-type[7]    : org.zeroturnaround.exec.stream.PumpStreamHandler
+class[8]            : org.zeroturnaround.exec.close.StandardProcessCloser
+required-type[8]    : org.zeroturnaround.exec.close.StandardProcessCloser
+class[9]            : org.zeroturnaround.exec.WaitForProcess
+required-type[9]    : org.zeroturnaround.exec.WaitForProcess
+class[10]           : org.zeroturnaround.exec.MDCCallableAdapter
+required-type[10]   : org.zeroturnaround.exec.MDCCallableAdapter
+class[11]           : java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask
+required-type[11]   : java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask
+class[12]           : org.zeroturnaround.exec.StartedProcess
+required-type[12]   : org.zeroturnaround.exec.StartedProcess
+class[13]           : io.specto.hoverfly.junit.core.Hoverfly
+required-type[13]   : io.specto.hoverfly.junit.core.Hoverfly
+version             : 1.4.11.1
+-------------------------------
+Caused by: java.lang.RuntimeException
+
