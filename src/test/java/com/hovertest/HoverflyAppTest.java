@@ -20,8 +20,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import com.wiremocktest.WiremockSimulator;
-
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.specto.hoverfly.junit.core.Hoverfly;
@@ -41,7 +39,7 @@ public class HoverflyAppTest {
 		setupHoverfly(hoverfly);
 	}
 
-	//@Test
+	@Test
 	@Order(1)
 	public void getLeveranserTest() {
 		System.out.println("Start test !");
